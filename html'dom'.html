@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>интукод</title>
+</head>
+<body id='bodyColor'>
+<div id="main">
+    <ul id="list">
+        <li>html</li>
+        <li>css</li>
+    </ul>
+</div>
+<div id="copyright">(c) INTOCODE</div>
+<script>
+
+
+
+const zagolovka = document.createElement('h1');
+const body = document.body;
+function dob(){
+  zagolovka.prepend('Работа с дом')
+  body.prepend(zagolovka)
+}
+dob()
+
+
+const addlinks = document.getElementById('main')
+const links = document.createElement('a')
+function addelem (){
+  links.prepend("link");
+  links.href = "https://novate.ru/blogs/tags/%E4%EE%EC/";
+  addlinks.append(links)
+  
+}
+addelem()
+
+function colorBody(color){
+  return body.style.backgroundColor = color
+}
+colorBody('red')
+
+
+const list =  document.getElementById("list")
+const li = document.createElement("li")
+function addText (text){
+  list.append(li);
+  li.append(text)
+}
+addText('Adam')
+
+
+const work = document
+
+function deleteBlok (name){
+  document.getElementById(name).remove()
+}
+deleteBlok('copyright')
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const work = document.getElementById("copyright");
+function hello(){
+    work.remove()
+}
+hello()
+*/
+
+</script>
+</body>
+</html>
